@@ -40,9 +40,16 @@ function calculateNewState() {
 
 				}
 			}
-			
-			console.log("i: "+i +" -j: "+j+ " -num: "+num_cells);
+	
+			if ((num_cells < 2 || num_cells > 3) && table[i][j].old) {
 
+				table[i][j].actual = false;
+
+			} else if (num_cells >= 3 && !table[i][j].old) {
+
+				table[i][j].actual = true;
+			}
+			
 		}
 
 	}

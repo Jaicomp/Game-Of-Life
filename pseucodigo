@@ -12,6 +12,15 @@ for i
 
 	table.push(row)
 	
+insertNewALifeCells();
+
+while true: 
+	calculateNewState();
+	printTable
+	updateTable
+
+
+
 
 
 
